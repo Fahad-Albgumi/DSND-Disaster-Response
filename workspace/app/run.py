@@ -30,7 +30,7 @@ engine = create_engine('sqlite:///../data/disasterETLpipeline.db')
 df = pd.read_sql_table('disasterETLpipeline', engine)
 
 # load model
-model = joblib.load("../models/classifer.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
